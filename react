@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+
+
+current_path=$(cd $(dirname $0) && pwd)
+
+
+source "${current_path}/function/util.sh"
+
+
+strindex 'hello' 'e'
+
 echo $BASH_VERSION
 
 uppercase=${1^}
