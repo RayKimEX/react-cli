@@ -11,7 +11,7 @@ cat > ${origin}/${uppercase}.js << ENDOFFILE
 import React from 'react';
 import './${uppercase}.scss'
 
-function ${uppercase} {
+function ${uppercase}() {
     return (
        	<div>
     		${uppercase} works!
@@ -36,7 +36,7 @@ EOF
 
 }
 
-current_path=$(cd $(dirname $0) && pwd)
+export current_path=$(cd $(dirname $0) && pwd)
 
 
 source "${current_path}/function/util.sh"
