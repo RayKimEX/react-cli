@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo $BASH_VERSION
+
+uppercase=${1^}
+
+cat > $1.js << ENDOFFILE
+
+import React from 'react';
+import './${uppercase}.scss'
+
+function ${uppercase} {
+    return (
+        <div>
+	    	${uppercase} works!
+		</div>
+    );
+}
+ENDOFFILE
+
