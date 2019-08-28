@@ -18,6 +18,8 @@ function ${uppercase}() {
 		</div>
    	);
 }
+
+export default ${uppercase};
 ENDOFFILE
 
 touch ${origin}/${uppercase}.scss
